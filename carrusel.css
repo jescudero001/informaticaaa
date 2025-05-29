@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background-color: #2c2f5c;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #3c3f72;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 25px;
+}
+nav ul li a {
+  display: block;
+  padding: 15px 0;
+  color: #ccc;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
+  border-bottom: 3px solid #ffca3a;
+}
+
+/* Main y galería click */
+main {
+  max-width: 700px;
+  background-color: rgba(44, 47, 92, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  text-align: center;
+  width: 90%;
+}
+
+#galeria-click h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+#imagen-cambiable {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+#imagen-cambiable:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}

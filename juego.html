@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juego de Roles: Igualdad de Género</title>
+  <link rel="stylesheet" href="juego.css" />
+</head>
+<body>
+  <header>
+    <h1>Juego de Roles: Igualdad de Género</h1>
+  </header>
+
+  <main>
+    <section id="seleccion-personaje">
+      <h2>Selecciona tu personaje</h2>
+      <div class="personajes">
+        <button class="personaje-btn" data-personaje="alex">Alex</button>
+        <button class="personaje-btn" data-personaje="maria">María</button>
+        <button class="personaje-btn" data-personaje="juan">Juan</button>
+      </div>
+    </section>
+
+    <section id="historia" class="oculto">
+      <h2>Historia</h2>
+      <div id="texto-historia"></div>
+      <div id="opciones"></div>
+    </section>
+  </main>
+
+  <script src="juego.js"></script>
+</body>
+</html>
